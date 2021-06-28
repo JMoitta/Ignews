@@ -1,4 +1,4 @@
-import { GetServerSideProps, GetStaticProps } from 'next'
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -15,7 +15,6 @@ interface HomeProps {
 }
 
 export default function Home({ produtc }: HomeProps) {
-  console.log(produtc)
   return (
     <>
       <Head>
@@ -55,6 +54,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       produtc
     },
-    revalidate: 60 * 60 * 24 // 24 hours
+    revalidate: 60 * 60 * 24, // 24 hours
   }
 }

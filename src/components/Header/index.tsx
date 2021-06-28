@@ -1,9 +1,9 @@
 import Image from 'next/image'
 
 import { SignInButton } from '../SignInButton'
-import styles from './styles.module.scss'
-
 import logoIgNews from '../../../public/images/logo.svg'
+
+import styles from './styles.module.scss'
 
 export function Header() {
   return (
